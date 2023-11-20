@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Interactive Button</title>
+  <style>
+    #clickme {
+      width: 100px;
+      height: 100px;
+      background-color: rgb(19, 17, 18);
+    }
+  </style>
+  <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+</head>
+<body>
+
+<div id="clickme"></div>
+<button id="hello">Click me</button>
+<button id="text">Test</button>
+
+<script>
+  $(document).ready(function() {
+    $("#hello").click(function() {
+      $("#clickme").css("background", "red");
+    });
+  });
+</script>
+
+</body>
+</html>
